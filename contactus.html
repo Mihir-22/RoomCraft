@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | RoomCraft</title>
+    <link rel="stylesheet" href="/CSS/styles5.css">
+    <link rel="shortcut icon" href="Images/favicon-32x32.png" type="image/x-icon">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/d8422a822a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Navigation Bar -->
+        <div class="navbar" id="navbar">
+            <img id="logo" src="Images/RC-removebg-preview.png" alt="logo">
+            <div id="navContainer">
+                <a href="/">Home</a>
+                <a href="/TheGallery">The Gallery</a>
+                <a href="/Projects">Projects</a>
+                <a href="/E-Shop">E-Shop</a>
+                <a href="/Philosophy">Philosophy</a>
+            </div>
+            <div class="profile-dropdown"><!--Shortcut:".profile-dropdown and then click"-->
+                <div class="profile-dropdown-button" onclick="Toggle()">
+                    <div class="profile-img" style="background-image: url('Images/default-avatar.png');">
+                        <i class="fa-solid fa-circle" id="red"></i><!--Shortcut:".fa-solid.fa-circle"-->
+                    </div>
+                    <!-- <span>
+                        <span id="user">User</span>
+                        <i class="fa-solid fa-angle-down" id="arrow"></i>
+                    </span> -->
+                </div>
+                <ul class="profile-dropdown-list">
+                    <div class="profile-info">
+                        <p id="email">dummyuser@gmail.com</p>
+                        <img src="Images/default-avatar.png" alt="" id="profile-info-image">
+                        <p>Hi, <span id="User">User</span></p>
+                        <div id="SigninButton" onclick="signIn()">
+                            <a id="Signin"><i class="fa-brands fa-google"></i><span>Sign in with Google</span></a>
+                        </div>
+                        <div class="more">
+                            <a id="Toggle"><i class="fa-solid fa-moon" id="light-dark"></i><span
+                                    id="toggle-text">Dark</span></a>
+                            <a id="Signout" onclick="logout()"><i
+                                    class="fa-solid fa-arrow-right-from-bracket"></i><span>Signout</span></a>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <!-- Background-Image -->
+        <div class="section" id="hero">
+            <div class="content">
+                <h1 id="brand">Contact Us</h1>
+                <p id="sub-brand-text">How can we help you?</p>
+            </div>
+            <a id="hero-down-button" class="down-button" data-speed="1000" href=".container2">
+                <img src="Images/down-button-white.png" alt="Show links" />
+            </a>
+            <div class="image-wrapper">
+                <img id="hero-image" src="Images/Contactbg.jpg"></img>
+            </div>
+        </div>
+    </div>
+
+    <div class="container2">
+        <div class="innerwrap">
+            <section class="section2 clearfix">
+                <div class="col2 column1 first">
+                    <div id="map">
+                        <div><iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.4741281912397!2d72.82041111001725!3d22.598763431927026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e50c43cdea6c7%3A0x5074fe9e0c1c8bd!2sCharotar%20University%20of%20Science%20and%20Technology%20(CHARUSAT)!5e0!3m2!1sen!2sin!4v1707635134683!5m2!1sen!2sin"
+                                style="border:0;width: 70vw; height: 70vh;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                    </div>
+                </div>
+                <div class="col2 column2 last">
+                    <div class="sec2innercont">
+                        <div class="sec2addr">
+                            <div id="brands">
+                                <a href="https://www.instagram.com/panelxpert/"><img src="Images\Instagram.png"
+                                        alt="Instagram" class="f-icon"></a>
+                                <a href="mailto:21dce016@charusat.edu.in"><img src="Images\facebook.png" alt="Gmail"
+                                        class="f-icon"></a>
+                                <a href="https://www.linkedin.com/in/panelxpert-1166b2286/"><img
+                                        src="Images\linkedin.png" alt="LinkedIn" class="f-icon"></a>
+                                <a href="https://wa.me/+919106930099"><img src="Images\Whatsapp.png" alt="WhatsApp"
+                                        class="f-icon"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sec2contactform">
+                        <h3 class="sec2frmtitle"></h3>
+                        <form action="">
+                            <div class="clearfix">
+                                <input class="col2 first" type="text" placeholder="FirstName">
+                                <input class="col2 last" type="text" placeholder="LastName">
+                            </div>
+                            <div class="clearfix">
+                                <input class="col2 first" type="Email" placeholder="Email">
+                                <input class="col2 last" type="text" placeholder="Contact Number">
+                            </div>
+                            <div class="clearfix">
+                                <textarea name="textarea" placeholder="Type here..." id="" cols="30"
+                                    rows="7"></textarea>
+                            </div>
+                            <div class="clearfix" id="button">
+                                <button class="button-74" type="submit">Send</button>
+                            </div>
+                    </div>
+                    </form>
+                </div>
+
+        </div>
+        </section>
+    </div>
+    <!-- <section class="section3">
+        <div class="image-wrapper2">
+            <img src="Images/Contact-left.jpg" alt="Background 1" class="Image1">
+        </div>
+        <div class="image-wrapper2">
+            <img src="Images/Contact-right.jpg" alt="Background 2" class="Image2">
+        </div>
+    </section> -->
+    <footer>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-google"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+        </div>
+        <span class="logo">© 2024 Copyright RoomCraft</span>
+    </footer>
+</body>
+<script src="/JS/script.js"></script>
+
+</html>

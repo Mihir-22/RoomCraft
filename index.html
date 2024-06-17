@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoomCraft | Home</title>
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <link rel="shortcut icon" href="Images/favicon-32x32.png" type="image/x-icon">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/d8422a822a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Navigation Bar -->
+        <div class="navbar" id="navbar">
+            <img id="logo" src="Images/RC-removebg-preview.png" alt="logo">
+            <div id="navContainer">
+                <a href="/" id="Home" class="atag">Home</a>
+                <a href="/TheGallery" class="atag">The Gallery</a>
+                <a href="/Projects" class="atag">Projects</a>
+                <a href="/E-Shop" class="atag">E-Shop</a>
+                <a href="/Philosophy" class="atag">Philosophy</a>
+            </div>
+            <div class="profile-dropdown"><!--Shortcut:".profile-dropdown and then click"-->
+                <div class="profile-dropdown-button" onclick="Toggle()">
+                    <div class="profile-img" style="background-image: url('Images/default-avatar.png');">
+                        <i class="fa-solid fa-circle" id="red"></i><!--Shortcut:".fa-solid.fa-circle"-->
+                    </div>
+                    <!-- <span >
+                        <span id="user">User</span>
+                        <i class="fa-solid fa-angle-down" id="arrow"></i>
+                    </span> -->
+                </div>
+                <ul class="profile-dropdown-list">
+                    <div class="profile-info">
+                        <p id="email">dummyuser@gmail.com</p>
+                        <img src="Images/default-avatar.png" alt="" id="profile-info-image">
+                        <p>Hi, <span id="User">User</span></p>
+                        <div id="SigninButton" onclick="signIn()">
+                            <a id="Signin"><i class="fa-brands fa-google"></i><span>Sign in with Google</span></a>
+                        </div>
+                        <div class="more">
+                            <a id="Toggle"><i class="fa-solid fa-moon" id="light-dark"></i><span
+                                    id="toggle-text">Dark</span></a>
+                            <a id="Signout" onclick="logout()"><i
+                                    class="fa-solid fa-arrow-right-from-bracket"></i><span>Signout</span></a>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <!-- Background-Image -->
+        <div class="section" id="hero">
+            <div class="content">
+                <h1 id="brand">RoomCraft</h1>
+                <p id="sub-brand-text">Style your Space</p>
+            </div>
+            <a id="hero-down-button" class="down-button" data-speed="1000" href="#blog-links">
+                <img src="Images/down-button.png" alt="Show links" />
+            </a>
+            <div class="image-wrapper">
+                <img id="hero-image" src="Images/Homebg.png"></img>
+            </div>
+        </div>
+        <!-- Blog Links -->
+        <div class="section" id="blog-links">
+            <a class="blog-link type-image-2-1 row1 col1"
+                href="https://www.urbanclap.com/blog/home-improvement/use-of-natural-stones-in-interior-design/">
+                <div class="article-image"
+                    style="background-image: url(https://de927adv5b23k.cloudfront.net/wp-content/uploads/2017/09/18171925/shutterstock_236969923.jpg)">
+                </div>
+                <h3>Use of Natural Stones in Interior Design</h3>
+            </a>
+            <a class="blog-link type-image-2-1 row1 col2"
+                href="https://www.urbanclap.com/blog/home-improvement/how-to-pick-lighting-for-your-home/">
+                <div class="article-image"
+                    style="background-image: url(https://de927adv5b23k.cloudfront.net/wp-content/uploads/2017/09/15115101/shutterstock_167076143-940x400.jpg)">
+                </div>
+                <h3>How to Pick Lighting for your Home</h3>
+            </a>
+            <a class="blog-link type-paragraph-2-1 row1 col3"
+                href="https://www.urbanclap.com/blog/home-improvement/wall-art-ideas-for-your-bedroom/">
+                <div class="article-image"
+                    style="background-image: url(https://de927adv5b23k.cloudfront.net/wp-content/uploads/2017/09/11164046/shutterstock_646806055.jpg)">
+                </div>
+                <h3>Wall Art Ideas for Your Bedroom</h3>
+                <p>Your bedroom is an extension of yourself, a respite from your day’s work, and a safe haven for your
+                    personal thoughts and time. As soon as your eyes fall on your bed, you feel relaxed and at peace.
+                    For these reasons it is important that your bedroom
+                    should represent who you are and what you like.</p>
+                <p>There are various ways in which you can do up your bed wall, depending on your aesthetics and
+                    utility. Here are a few ...</p>
+                <p class="continue">Continue reading</p>
+                </p>
+            </a>
+            <a class="blog-link type-color-2-1 row2 col1" id="Blog4"
+                href="https://www.urbanclap.com/blog/home-improvement/diy-ideas-for-home-decor-5-ways-to-reuse-old-glass-bottles-and-jars/">
+                <h3>DIY Ideas for Home Decor: 5 Ways to Reuse Old Glass Bottles and Jars!</h3>
+            </a>
+            <a class="blog-link type-image-2-1 row2 col2"
+                href="https://www.urbanclap.com/blog/home-improvement/dining-table-decor-ideas-for-your-home/">
+                <div class="article-image"
+                    style="background-image: url(https://de927adv5b23k.cloudfront.net/wp-content/uploads/2017/09/13143621/shutterstock_4950170771-940x400.jpg)">
+                </div>
+                <h3>Dining Table Decor Ideas for your Home</h3>
+            </a>
+            <a class="blog-link type-image-2-1 row2 col3"
+                href="https://www.urbanclap.com/blog/home-improvement/6-ways-to-spruce-up-your-office-interiors/">
+                <div class="article-image"
+                    style="background-image: url(https://de927adv5b23k.cloudfront.net/wp-content/uploads/2017/09/06160520/Mad-Design-3-940x400.jpg)">
+                </div>
+                <h3>6 Ways to Spruce Up Your Office Interiors</h3>
+            </a>
+            <a class="blog-link type-image-2-2 row3 col1"
+                href="https://www.urbanclap.com/blog/home-improvement/5-home-decor-ideas-for-autumn-in-india/">
+                <span>Tips</span>
+                <div class="article-image"
+                    style="background-image: url(https://de927adv5b23k.cloudfront.net/wp-content/uploads/2017/09/07111634/shutterstock_308859035.jpg)">
+                </div>
+                <h3>5 Home Decor Ideas for Autumn in India</h3>
+            </a>
+            <a class="blog-link type-heading-1-1 row3 col3"
+                href="https://www.urbanclap.com/blog/home-improvement/the-best-flooring-materials-for-humid-regions-in-india/">
+                <h3>The Best Flooring Materials for Humid Regions in India</h3>
+            </a>
+            <a class="blog-link type-heading-1-1 row3_5 col3"
+                href="https://www.urbanclap.com/blog/home-improvement/finish-right-designing-home/">
+                <h3>How to Finish it Right- Designing Your Home</h3>
+            </a>
+        </div>
+        <!-- Footer -->
+        <div class="section" id="footer">
+            <div class="content">
+                <h2>Tell us your requirements and get quotations from the best Interior Designers around you.</h2>
+                <h2>Only on RoomCraft.</h2>
+            </div>
+        </div>
+        <div class="contact-us-link">
+            <h2 id="help-you">How can we help you?</h2>
+            <a href="/Contact"><button class="button-69" role="button">Contact us</button></a>
+            <p>Send us a message to discuss your project in further details, or for information about our services</p>
+        </div>
+        <footer id="footertag">
+            <div class="icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-google"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <span class="logo">© 2024 Copyright RoomCraft</span>
+        </footer>
+    </div>
+</body>
+<script src="/JS/script.js"></script>
+
+</html>
